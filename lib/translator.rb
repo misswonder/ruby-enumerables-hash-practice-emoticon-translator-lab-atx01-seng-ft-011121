@@ -29,6 +29,7 @@ def get_japanese_emoticon(library, emoticon)
     end 
   end 
   #binding.pry
+<<<<<<< HEAD
    if value
      value[1][:japanese]
    else
@@ -52,3 +53,47 @@ def get_english_meaning(library, emoticon)
       "Sorry, that emoticon was not found"
     end
 end
+=======
+   if value 
+     values[:japanese]
+   else 
+     "Sorry the emoticon is not found"
+   end 
+end 
+  
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  #binding.pry
+  # result = translations.find do |meaning, translation|
+  # binding.pry
+  #   if result
+  #     result[1][:japanese] == emoticon
+  #   else
+  #     'Sorry, that emoticon was not found'
+  #   end
+  # end 
+end
+
+def get_english_meaning(library, emoticon)
+  # code goes here
+  translations = load_library(library)
+  result = translations.find do |meaning, translation|
+    if result
+      result[1][:english] == emoticon
+    else
+      'Sorry, that emoticon was not found'
+    end
+  end 
+end 
+>>>>>>> 2aa16dbeab57a87ead7b1126c7fc99b45fe0e0bc
